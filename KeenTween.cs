@@ -57,11 +57,11 @@ namespace KeenTween
 								if (typeof(TweenCurve).IsAssignableFrom(type))
 								{
 									string name = type.Name;
-									if (!name.StartsWith("Ease"))
+									if (!name.StartsWith("Curve"))
 									{
 										continue;
 									}
-									name = name.Substring("Ease".Length);
+									name = name.Substring("Curve".Length);
 
 									typeLookupDict.Add(name, type);
 								}
